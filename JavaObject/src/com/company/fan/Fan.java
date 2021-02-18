@@ -1,4 +1,4 @@
-package fan;
+package com.company.fan;
 
 public class Fan {
     final int SLOW = 1;

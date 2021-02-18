@@ -1,4 +1,4 @@
-package stop.watch;
+package com.company.stopwatch;
 
 public class mainProgramCaculationTime {
     public static void main(String[] args) {

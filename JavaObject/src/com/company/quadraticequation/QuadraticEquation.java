@@ -1,4 +1,4 @@
-package quadratic.equation;
+package com.company.quadraticequation;
 
 public class QuadraticEquation {
     double a;

@@ -1,4 +1,4 @@
-package fan;
+package com.company.fan;
 
 public class MainFan {
     public static void main(String[] args) {
