@@ -22,7 +22,7 @@ public class StopWatch {
 
     public void stop() {
         endTime = System.currentTimeMillis();
-        System.out.println("StopWatch: " + getElapsedTime() + " milliseconds.");
+        System.out.println("Total time: " + getElapsedTime() + " milliseconds.");
     }
 
     public long getElapsedTime() {

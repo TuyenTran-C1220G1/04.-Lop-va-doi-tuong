@@ -1,10 +1,18 @@
 package com.company.stopwatch;
 
+import java.util.Random;
+
 public class mainProgramCalculationTime {
     public static void main(String[] args) {
         StopWatch watch = new StopWatch();
 
-        int arr[] = {64, 25, 12, 22, 11, 15, 20, 23, 26, 28, 31, 25};
+        int arr[] = new int[1000];
+
+        Random random = new Random();
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(10000);
+        }
 
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
