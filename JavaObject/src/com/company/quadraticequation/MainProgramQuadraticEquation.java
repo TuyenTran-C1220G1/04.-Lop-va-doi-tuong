@@ -16,20 +16,20 @@ public class MainProgramQuadraticEquation {
         double c = scanner.nextDouble();
 
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
-        if (quadraticEquation.a == 0) {
-            if (quadraticEquation.b == 0) {
-                if (quadraticEquation.c == 0) {
+        if (quadraticEquation.getA() == 0) {
+            if (quadraticEquation.getB() == 0) {
+                if (quadraticEquation.getC() == 0) {
                     System.out.println("The equation has many roots");
                 } else {
-                    System.out.println("The equation has no roots");
+                    System.out.println("The equation has no real roots");
                 }
             } else {
-                System.out.println("The equation has one root: " + -quadraticEquation.c / quadraticEquation.b);
+                System.out.println("The equation has one root: " + -quadraticEquation.getC() / quadraticEquation.getB());
             }
         } else if (quadraticEquation.getDiscriminant() < 0) {
-            System.out.println("The equation has no roots");
+            System.out.println("The equation has no real roots");
         } else if (quadraticEquation.getDiscriminant() == 0) {
-            System.out.println("The equation has one root: " + -quadraticEquation.b / (2 * quadraticEquation.a));
+            System.out.println("The equation has one root: " + -quadraticEquation.getB() / (2 * quadraticEquation.getA()));
         } else {
             System.out.println("The equation has two roots: " + quadraticEquation.getRoot1() + " and " + quadraticEquation.getRoot2());
         }
